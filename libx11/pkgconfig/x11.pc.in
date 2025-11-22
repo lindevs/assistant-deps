@@ -1,0 +1,15 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+xthreadlib=-lpthread
+
+Name: X11
+Description: X Library
+Version: @PROJECT_VERSION@
+Requires: xproto kbproto
+Requires.private: xcb >= 1.11.1
+Cflags: -I${includedir} @XTHREAD_CFLAGS@
+Libs: -L${libdir} -lX11
+Libs.private: -lpthread

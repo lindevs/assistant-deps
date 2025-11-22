@@ -1,0 +1,95 @@
+/* Include compose table cache support */
+#cmakedefine COMPOSECACHE 1
+
+/* Has getresuid() & getresgid() functions */
+#cmakedefine HASGETRESUID 1
+
+/* Has issetugid() function */
+#cmakedefine HASSETUGID 1
+
+/* Has shm*() functions */
+#cmakedefine HAS_SHM 1
+
+/* Define to 1 if you have the `reallocarray' function. */
+#cmakedefine HAVE_REALLOCARRAY 1
+
+/* Define to 1 if you have the `seteuid' function. */
+#cmakedefine HAVE_SETEUID 1
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#cmakedefine HAVE_STRCASECMP 1
+
+/* Define to 1 if you have the <sys/filio.h> header file. */
+#cmakedefine HAVE_SYS_FILIO_H 1
+
+/* Define to 1 if you have the <sys/ioctl.h> header file. */
+#cmakedefine HAVE_SYS_IOCTL_H 1
+
+/* Define to 1 if you have the <sys/select.h> header file. */
+#cmakedefine HAVE_SYS_SELECT_H 1
+
+/* Define to 1 if you have the <sys/socket.h> header file. */
+#cmakedefine HAVE_SYS_SOCKET_H 1
+
+/* Define to 1 if the system has the `__builtin_popcountl' built-in function */
+#cmakedefine HAVE___BUILTIN_POPCOUNTL 1
+
+/* Support IPv6 for TCP connections */
+#cmakedefine IPv6 1
+
+/* Support TCP socket connections */
+#cmakedefine TCPCONN 1
+
+/* Support UNIX socket connections */
+#cmakedefine UNIXCONN 1
+
+/* Use the X cursor library to load cursors */
+#cmakedefine USE_DYNAMIC_XCURSOR 1
+
+/* poll() function is available */
+#cmakedefine USE_POLL 1
+
+/* Enable GNU extensions on systems that have them.  */
+#cmakedefine _GNU_SOURCE 1
+
+/* Call XInitThreads() from the library constructor */
+#cmakedefine USE_THREAD_SAFETY_CONSTRUCTOR 1
+
+/* Include support for XCMS */
+#cmakedefine XCMS 1
+
+/* Location of error message database */
+#cmakedefine XERRORDB "@XERRORDB@"
+
+/* Enable XF86BIGFONT extension */
+#cmakedefine XF86BIGFONT 1
+
+/* Use XKB */
+#cmakedefine XKB 1
+
+/* Location of keysym database */
+#cmakedefine XKEYSYMDB "@XKEYSYMDB@"
+
+/* support for X Locales */
+#cmakedefine XLOCALE 1
+
+/* Location of libX11 locale data */
+#cmakedefine XLOCALEDIR "@XLOCALEDIR@"
+
+/* Location of libX11 locale libraries */
+#cmakedefine XLOCALELIBDIR "@XLOCALELIBDIR@"
+
+/* Whether libX11 is compiled with thread support */
+#cmakedefine XTHREADS 1
+
+/* Whether libX11 needs to use MT safe API's */
+#cmakedefine XUSE_MTSAFE_API 1
+
+/* Location of XCMS files */
+#cmakedefine XCMSDIR "@XCMSDIR@"
+
+/* Xtrans transport type */
+#cmakedefine XIM_t 1
+
+/* Xtrans transport client code */
+#cmakedefine TRANS_CLIENT 1
