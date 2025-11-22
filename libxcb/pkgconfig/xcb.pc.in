@@ -1,0 +1,13 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+xcbproto_version=@PROJECT_VERSION@
+
+Name: XCB
+Description: X-protocol C Binding
+Version: @PROJECT_VERSION@
+Requires.private: xau >= 0.99.2
+Libs: -L${libdir} -lxcb
+Libs.private: @LIBS@
+Cflags: -I${includedir}

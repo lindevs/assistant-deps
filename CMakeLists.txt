@@ -3,3 +3,4 @@ project(assistant-deps)
 
 add_subdirectory(xorgproto)
 add_subdirectory(libxau)
+add_subdirectory(libxcb)

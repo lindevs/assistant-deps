@@ -1,0 +1,20 @@
+/* Defined if GCC supports the visibility feature */
+#cmakedefine GCC_HAS_VISIBILITY
+
+/* Define if your platform supports abstract sockets */
+#cmakedefine HAVE_ABSTRACT_SOCKETS 1
+
+/* getaddrinfo() function is available */
+#cmakedefine HAVE_GETADDRINFO 1
+
+/* Define if your platform supports sendmsg */
+#cmakedefine HAVE_SENDMSG 1
+
+/* poll() function is available */
+#cmakedefine USE_POLL 1
+
+/* Define if not provided by <limits.h> */
+#cmakedefine IOV_MAX @IOV_MAX@
+
+/* XCB buffer queue size */
+#define XCB_QUEUE_BUFFER_SIZE @XCB_QUEUE_BUFFER_SIZE@

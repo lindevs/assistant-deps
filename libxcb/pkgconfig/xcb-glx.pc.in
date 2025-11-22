@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB GLX
+Description: XCB GLX Extension
+Version: @PROJECT_VERSION@
+Requires.private: xcb
+Libs: -L${libdir} -lxcb-glx
+Cflags: -I${includedir}

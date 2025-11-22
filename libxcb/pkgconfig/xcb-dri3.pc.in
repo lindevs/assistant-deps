@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB DRI3
+Description: XCB DRI3 Extension
+Version: @PROJECT_VERSION@
+Requires.private: xcb
+Libs: -L${libdir} -lxcb-dri3
+Cflags: -I${includedir}

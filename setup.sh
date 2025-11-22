@@ -1,6 +1,6 @@
 #!/bin/bash
 
-libs=(all xorgproto libxau)
+libs=(all xorgproto libxau libxcb)
 
 archs=(all native aarch64 riscv64)
 
