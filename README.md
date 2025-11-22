@@ -12,3 +12,4 @@
 * [libxtrans](https://gitlab.freedesktop.org/xorg/lib/libxtrans)
 * [libice](https://gitlab.freedesktop.org/xorg/lib/libice)
 * [libsm](https://gitlab.freedesktop.org/xorg/lib/libsm)
+* [libxdmcp](https://gitlab.freedesktop.org/xorg/lib/libxdmcp)

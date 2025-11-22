@@ -1,0 +1,14 @@
+/* Has Wraphelp.c needed for XDM AUTH protocols */
+#cmakedefine HASXDMAUTH 1
+
+/* Define to 1 if you have the `arc4random_buf' function. */
+#cmakedefine HAVE_ARC4RANDOM_BUF 1
+
+/* Define to 1 if you have the `getentropy' function. */
+#cmakedefine HAVE_GETENTROPY 1
+
+/* Define to 1 if you have the `lrand48' function. */
+#cmakedefine HAVE_LRAND48 1
+
+/* Define to 1 if you have the `srand48' function. */
+#cmakedefine HAVE_SRAND48 1
