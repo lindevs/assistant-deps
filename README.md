@@ -7,3 +7,4 @@
 * [libxcb-wm](https://gitlab.freedesktop.org/xorg/lib/libxcb-wm)
 * [libxcb-keysyms](https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms)
 * [libxcb-util](https://gitlab.freedesktop.org/xorg/lib/libxcb-util)
+* [libxcb-image](https://gitlab.freedesktop.org/xorg/lib/libxcb-image)

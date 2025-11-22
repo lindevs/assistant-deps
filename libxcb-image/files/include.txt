@@ -1,0 +1,3 @@
+xcb_bitops.h
+xcb_image.h
+xcb_pixel.h
