@@ -1,0 +1,5 @@
+/* Support IPv6 for TCP connections */
+#cmakedefine IPv6 1
+
+/* Support TCP socket connections */
+#cmakedefine TCPCONN 1

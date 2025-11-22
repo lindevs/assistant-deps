@@ -1,0 +1,3 @@
+X11/SM/SM.h
+X11/SM/SMlib.h
+X11/SM/SMproto.h
