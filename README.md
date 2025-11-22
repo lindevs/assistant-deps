@@ -9,3 +9,4 @@
 * [libxcb-util](https://gitlab.freedesktop.org/xorg/lib/libxcb-util)
 * [libxcb-image](https://gitlab.freedesktop.org/xorg/lib/libxcb-image)
 * [libxcb-cursor](https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor)
+* [libxtrans](https://gitlab.freedesktop.org/xorg/lib/libxtrans)
