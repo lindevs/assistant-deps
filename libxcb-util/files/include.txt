@@ -1,0 +1,4 @@
+xcb_atom.h
+xcb_aux.h
+xcb_event.h
+xcb_util.h
