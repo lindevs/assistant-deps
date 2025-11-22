@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcre2-8
+Description: PCRE2 - Perl compatible regular expressions C library (2nd API) with 8 bit character support
+Version: @PROJECT_VERSION@
+Libs: -L${libdir} -lpcre2-8@LIB_POSTFIX@
+Libs.private: @PTHREAD_CFLAGS@ @PTHREAD_LIBS@
+Cflags: -I${includedir} @PCRE2_STATIC_CFLAG@

@@ -1,0 +1,10 @@
+sljitLir.c
+sljitUtils.c
+sljitSerialize.c
+sljitNativeX86_common.c
+sljitNativeX86_64.c
+sljitNativeARM_64.c
+sljitNativeRISCV_common.c
+sljitNativeRISCV_64.c
+allocator_src/sljitExecAllocatorCore.c
+allocator_src/sljitExecAllocatorPosix.c

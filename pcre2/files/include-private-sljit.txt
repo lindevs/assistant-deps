@@ -1,0 +1,4 @@
+sljitLir.h
+sljitConfigCPU.h
+sljitConfig.h
+sljitConfigInternal.h
