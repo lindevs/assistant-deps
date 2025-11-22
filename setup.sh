@@ -1,7 +1,7 @@
 #!/bin/bash
 
 libs=(all xorgproto libxau libxcb libxcb-render-util libxcb-wm libxcb-keysyms libxcb-util libxcb-image libxcb-cursor \
-      libxtrans libice libsm libxdmcp libx11)
+      libxtrans libice libsm libxdmcp libx11 zlib)
 
 archs=(all native aarch64 riscv64)
 

@@ -14,3 +14,4 @@
 * [libsm](https://gitlab.freedesktop.org/xorg/lib/libsm)
 * [libxdmcp](https://gitlab.freedesktop.org/xorg/lib/libxdmcp)
 * [libx11](https://gitlab.freedesktop.org/xorg/lib/libx11)
+* [zlib](https://github.com/madler/zlib)
