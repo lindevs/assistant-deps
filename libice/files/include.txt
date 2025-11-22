@@ -1,0 +1,6 @@
+X11/ICE/ICE.h
+X11/ICE/ICEconn.h
+X11/ICE/ICElib.h
+X11/ICE/ICEmsg.h
+X11/ICE/ICEproto.h
+X11/ICE/ICEutil.h

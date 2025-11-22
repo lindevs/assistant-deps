@@ -1,0 +1,32 @@
+/* Define to 1 if you have the `arc4random_buf' function. */
+#cmakedefine HAVE_ARC4RANDOM_BUF 1
+
+/* Define to 1 if you have the `asprintf' function. */
+#cmakedefine HAVE_ASPRINTF 1
+
+/* Define to 1 if you have the `getentropy' function. */
+#cmakedefine HAVE_GETENTROPY 1
+
+/* Define to 1 if you have the `strcasecmp' function. */
+#cmakedefine HAVE_STRCASECMP 1
+
+/* Xtrans transport type */
+#cmakedefine ICE_t 1
+
+/* Support IPv6 for TCP connections */
+#cmakedefine IPv6 1
+
+/* Support TCP socket connections */
+#cmakedefine TCPCONN 1
+
+/* Xtrans transport client code */
+#cmakedefine TRANS_CLIENT 1
+
+/* Xtrans transport server code */
+#cmakedefine TRANS_SERVER 1
+
+/* Support UNIX socket connections */
+#cmakedefine UNIXCONN 1
+
+/* Enable GNU extensions on systems that have them. */
+#cmakedefine _GNU_SOURCE 1
