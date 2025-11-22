@@ -1,0 +1,15 @@
+/* Define to 1 if you have the `explicit_bzero' function. */
+#cmakedefine HAVE_EXPLICIT_BZERO 1
+
+/* Define to 1 if you have the `pathconf' function. */
+#cmakedefine HAVE_PATHCONF 1
+
+/* Whether libXau is compiled with thread support */
+#cmakedefine XTHREADS 1
+
+/* Whether libXau needs to use MT safe API's */
+#cmakedefine XUSE_MTSAFE_API 1
+
+/* Enable POSIX-compatible threading on Solaris.  */
+#cmakedefine _POSIX_PTHREAD_SEMANTICS 1
+#cmakedefine _REENTRANT 1

@@ -1,0 +1,46 @@
+{
+  "version": 8,
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "build/${presetName}"
+    },
+    {
+      "name": "release",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "debug",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "test-native",
+      "inherits": "release",
+      "binaryDir": "build/test/native"
+    },
+    {
+      "name": "test-aarch64",
+      "inherits": "release",
+      "binaryDir": "build/test/aarch64",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "cmake/toolchain-aarch64.cmake"
+      }
+    },
+    {
+      "name": "test-riscv64",
+      "inherits": "release",
+      "binaryDir": "build/test/riscv64",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "cmake/toolchain-riscv64.cmake"
+      }
+    }
+  ]
+}
