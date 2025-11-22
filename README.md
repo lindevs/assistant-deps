@@ -15,3 +15,4 @@
 * [libxdmcp](https://gitlab.freedesktop.org/xorg/lib/libxdmcp)
 * [libx11](https://gitlab.freedesktop.org/xorg/lib/libx11)
 * [zlib](https://github.com/madler/zlib)
+* [libpng](https://github.com/pnggroup/libpng)

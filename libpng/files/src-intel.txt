@@ -1,0 +1,2 @@
+intel/filter_sse2_intrinsics.c
+intel/intel_init.c

@@ -1,0 +1,2 @@
+loongarch/loongarch_lsx_init.c
+loongarch/filter_lsx_intrinsics.c

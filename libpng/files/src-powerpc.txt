@@ -1,0 +1,2 @@
+powerpc/powerpc_init.c
+powerpc/filter_vsx_intrinsics.c

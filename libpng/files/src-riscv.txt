@@ -1,0 +1,2 @@
+riscv/filter_rvv_intrinsics.c
+riscv/riscv_init.c

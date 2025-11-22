@@ -1,0 +1,4 @@
+pngpriv.h
+pngdebug.h
+pnginfo.h
+pngstruct.h

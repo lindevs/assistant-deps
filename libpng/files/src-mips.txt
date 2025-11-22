@@ -1,0 +1,3 @@
+mips/mips_init.c
+mips/filter_msa_intrinsics.c
+mips/filter_mmi_inline_assembly.c
