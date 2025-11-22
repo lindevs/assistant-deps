@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB RenderUtil library
+Description: XCB RENDER-extension utilities library
+Version: @PROJECT_VERSION@
+Requires: xcb xcb-render
+Libs: -L${libdir} -lxcb-render-util @LIBS@
+Cflags: -I${includedir}
