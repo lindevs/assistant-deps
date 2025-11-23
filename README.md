@@ -17,3 +17,4 @@
 * [zlib](https://github.com/madler/zlib)
 * [libpng](https://github.com/pnggroup/libpng)
 * [pcre2](https://github.com/PCRE2Project/pcre2)
+* [freetype](https://github.com/freetype/freetype.git)
