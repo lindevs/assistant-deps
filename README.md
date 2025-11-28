@@ -19,3 +19,4 @@
 * [pcre2](https://github.com/PCRE2Project/pcre2)
 * [freetype](https://github.com/freetype/freetype)
 * [libfacedetection](https://github.com/ShiqiYu/libfacedetection)
+* [leptonica](https://github.com/DanBloomberg/leptonica)

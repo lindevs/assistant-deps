@@ -1,0 +1,5 @@
+/* Define to 1 if you have the `fmemopen' function. */
+#cmakedefine HAVE_FMEMOPEN 1
+
+/* Define to 1 if you have the `fstatat' function. */
+#cmakedefine HAVE_FSTATAT 1
