@@ -18,7 +18,7 @@ endif ()
 
 configure_file(config/endianness.h.in "${CMAKE_CURRENT_BINARY_DIR}/include/leptonica/endianness.h" @ONLY)
 configure_file(config/config_auto.h.in "${CMAKE_CURRENT_BINARY_DIR}/include-private/config_auto.h" @ONLY)
-configure_file(pkgconfig/lept_Release.pc.in "${CMAKE_CURRENT_BINARY_DIR}/pkgconfig/lept_Release.pc" @ONLY)
+configure_file(pkgconfig/lept.pc.in "${CMAKE_CURRENT_BINARY_DIR}/pkgconfig/lept.pc" @ONLY)
 
 set(PROJECT_SOURCES
         src/adaptmap.c
@@ -209,8 +209,8 @@ set(PROJECT_SOURCES
 add_library(${PROJECT_NAME} ${PROJECT_SOURCES})
 
 target_include_directories(${PROJECT_NAME}
-        PUBLIC include ${CMAKE_CURRENT_BINARY_DIR}/include
-        PRIVATE include/leptonica ${CMAKE_CURRENT_BINARY_DIR}/include/leptonica ${CMAKE_CURRENT_BINARY_DIR}/include-private
+        PUBLIC include include/leptonica ${CMAKE_CURRENT_BINARY_DIR}/include ${CMAKE_CURRENT_BINARY_DIR}/include/leptonica
+        PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/include-private
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE TRUE)

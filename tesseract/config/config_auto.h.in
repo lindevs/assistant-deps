@@ -1,0 +1,5 @@
+#cmakedefine GRAPHICS_DISABLED OFF
+
+#cmakedefine FAST_FLOAT ON
+
+#cmakedefine DISABLED_LEGACY_ENGINE OFF

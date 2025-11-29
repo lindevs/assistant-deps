@@ -1,0 +1,32 @@
+diff --git a/src/ccutil/errcode.h b/src/ccutil/errcode.h
+index 5f4e571..3f52817 100644
+--- a/src/ccutil/errcode.h
++++ b/src/ccutil/errcode.h
+@@ -54,12 +54,12 @@ constexpr ERRCODE ASSERT_FAILED("Assert failed");
+ #define DO_NOTHING static_cast<void>(0)
+ 
+ #define ASSERT_HOST(x) \
+-  (x) ? DO_NOTHING : ASSERT_FAILED.error(#x, ABORT, "in file %s, line %d", __FILE__, __LINE__)
++  (x) ? DO_NOTHING : ASSERT_FAILED.error(#x, ABORT, "in function %s, line %d", __func__, __LINE__)
+ 
+ #define ASSERT_HOST_MSG(x, ...)                                                \
+   if (!(x)) {                                                                  \
+     tprintf(__VA_ARGS__);                                                      \
+-    ASSERT_FAILED.error(#x, ABORT, "in file %s, line %d", __FILE__, __LINE__); \
++    ASSERT_FAILED.error(#x, ABORT, "in function %s, line %d", __func__, __LINE__); \
+   }
+ 
+ } // namespace tesseract
+diff --git a/src/ccutil/unicharset.cpp b/src/ccutil/unicharset.cpp
+index b29ec3b..4b044ab 100644
+--- a/src/ccutil/unicharset.cpp
++++ b/src/ccutil/unicharset.cpp
+@@ -824,7 +824,7 @@ bool UNICHARSET::load_via_fgets(
+     stream >> std::setw(255) >> unichar >> std::hex >> properties >> std::dec;
+     // stream.flags(std::ios::dec);
+     if (stream.fail()) {
+-      fprintf(stderr, "%s:%d failed\n", __FILE__, __LINE__);
++      fprintf(stderr, "%s:%d failed\n", __func__, __LINE__);
+       return false;
+     }
+     auto position = stream.tellg();

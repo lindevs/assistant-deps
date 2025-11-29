@@ -20,3 +20,4 @@
 * [freetype](https://github.com/freetype/freetype)
 * [libfacedetection](https://github.com/ShiqiYu/libfacedetection)
 * [leptonica](https://github.com/DanBloomberg/leptonica)
+* [tesseract](https://github.com/tesseract-ocr/tesseract)

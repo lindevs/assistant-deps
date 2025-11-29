@@ -1,0 +1,14 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6727af2..90fae14 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -127,9 +127,6 @@ endif()
+ include(CheckCXXCompilerFlag)
+ 
+ set(CMAKE_CXX_STANDARD 17)
+-if("cxx_std_20" IN_LIST CMAKE_CXX_COMPILE_FEATURES)
+-  set(CMAKE_CXX_STANDARD 20)
+-endif()
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ if(NOT CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+   # cygwin gnu c++ needs to use -std=gnu++17 instead of -std=c++17

@@ -1,0 +1,11 @@
+baseapi.h
+capi.h
+export.h
+ltrresultiterator.h
+ocrclass.h
+osdetect.h
+pageiterator.h
+publictypes.h
+renderer.h
+resultiterator.h
+unichar.h

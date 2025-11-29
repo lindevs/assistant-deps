@@ -1,7 +1,7 @@
 #!/bin/bash
 
 libs=(all xorgproto libxau libxcb libxcb-render-util libxcb-wm libxcb-keysyms libxcb-util libxcb-image libxcb-cursor \
-      libxtrans libice libsm libxdmcp libx11 zlib libpng pcre2 freetype libfacedetection leptonica)
+      libxtrans libice libsm libxdmcp libx11 zlib libpng pcre2 freetype libfacedetection leptonica tesseract)
 
 archs=(all native aarch64 riscv64)
 
