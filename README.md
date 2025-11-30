@@ -21,3 +21,4 @@
 * [libfacedetection](https://github.com/ShiqiYu/libfacedetection)
 * [leptonica](https://github.com/DanBloomberg/leptonica)
 * [tesseract](https://github.com/tesseract-ocr/tesseract)
+* [zxing-cpp](https://github.com/zxing-cpp/zxing-cpp)

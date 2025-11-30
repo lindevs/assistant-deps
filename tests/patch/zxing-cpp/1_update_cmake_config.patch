@@ -1,0 +1,47 @@
+diff --git a/core/CMakeLists.txt b/core/CMakeLists.txt
+index fb19617..2c67cb8 100644
+--- a/core/CMakeLists.txt
++++ b/core/CMakeLists.txt
+@@ -562,7 +562,6 @@ list(REMOVE_ITEM PRECOMPILE_HEADERS "$<$<BOOL:${ZXING_C_API}>:${CMAKE_CURRENT_SO
+ list(REMOVE_ITEM PRECOMPILE_HEADERS src/DecodeHints.h) # [[deprecated]]
+ list(REMOVE_ITEM PRECOMPILE_HEADERS src/Result.h)      # [[deprecated]]
+ list(REMOVE_ITEM PRECOMPILE_HEADERS src/ZXVersion.h)   # [[deprecated]]
+-target_precompile_headers(ZXing PRIVATE ${PRECOMPILE_HEADERS})
+ set_source_files_properties(src/DecodeHints.cpp PROPERTIES SKIP_PRECOMPILE_HEADERS ON)
+ 
+ if(CMAKE_BUILD_TYPE MATCHES "Release|RelWithDebInfo")
+@@ -570,34 +569,6 @@ if(CMAKE_BUILD_TYPE MATCHES "Release|RelWithDebInfo")
+     #  1. their binary size decreases significantly
+     #  2. the runtime of ReaderTest is not (measurably) affected
+     # Compiling them with -Os saves about 40kB (3%) with clang and 190kB (12%) with gcc.
+-    check_cxx_compiler_flag("-Os" COMPILER_KNOWS_Os)
+-    if(COMPILER_KNOWS_Os)
+-    set_source_files_properties(
+-        src/Barcode.cpp
+-        src/BarcodeFormat.cpp
+-        src/BitMatrixIO.cpp
+-        src/Error.cpp
+-        src/GTIN.cpp
+-        src/HRI.cpp
+-        src/MultiFormatReader.cpp
+-        src/WriteBarcode.cpp
+-        src/ZXingC.cpp
+-        src/ZXingCpp.cpp
+-        src/aztec/AZHighLevelEncoder.cpp
+-        src/datamatrix/DMDataBlock.cpp
+-        src/datamatrix/DMHighLevelEncoder.cpp
+-        src/oned/ODDataBarExpandedBitDecoder.cpp
+-        src/pdf417/PDFHighLevelEncoder.cpp
+-        src/qrcode/QRBitMatrixParser.cpp
+-        src/qrcode/QRDataBlock.cpp
+-        src/qrcode/QRDecoder.cpp
+-        src/qrcode/QREncoder.cpp
+-        src/qrcode/QRMaskUtil.cpp
+-        src/qrcode/QRReader.cpp
+-        src/qrcode/QRVersion.cpp
+-        ${LIBZINT_FILES}
+-        PROPERTIES SKIP_PRECOMPILE_HEADERS ON COMPILE_FLAGS -Os)
+-    endif()
+ endif()
+ 
+ include (GNUInstallDirs)
