@@ -1,0 +1,35 @@
+/* Set to 1 if __builtin_bswap16 is available */
+#cmakedefine HAVE_BUILTIN_BSWAP16 1
+
+/* Set to 1 if __builtin_bswap32 is available */
+#cmakedefine HAVE_BUILTIN_BSWAP32 1
+
+/* Set to 1 if __builtin_bswap64 is available */
+#cmakedefine HAVE_BUILTIN_BSWAP64 1
+
+/* Define to 1 if you have the <GLUT/glut.h> header file. */
+#cmakedefine HAVE_GLUT_GLUT_H 1
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H 1
+
+/* Define to 1 if you have the <wincodec.h> header file. */
+#cmakedefine HAVE_WINCODEC_H 1
+
+/* Set to 1 if NEON is supported */
+#cmakedefine WEBP_HAVE_NEON
+
+/* Set to 1 if SSE2 is supported */
+#cmakedefine WEBP_HAVE_SSE2 1
+
+/* Set to 1 if SSE4.1 is supported */
+#cmakedefine WEBP_HAVE_SSE41 1
+
+/* Set to 1 if AVX2 is supported */
+#cmakedefine WEBP_HAVE_AVX2 1
+
+/* Enable near lossless encoding */
+#cmakedefine WEBP_NEAR_LOSSLESS 1
+
+/* Undefine this to disable thread support. */
+#cmakedefine WEBP_USE_THREAD 1

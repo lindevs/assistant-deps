@@ -1,0 +1,4 @@
+mux/anim_encode.c
+mux/muxedit.c
+mux/muxinternal.c
+mux/muxread.c

@@ -16,6 +16,7 @@
 * [libx11](https://gitlab.freedesktop.org/xorg/lib/libx11)
 * [zlib](https://github.com/madler/zlib)
 * [libpng](https://github.com/pnggroup/libpng)
+* [libwebp](https://github.com/webmproject/libwebp)
 * [pcre2](https://github.com/PCRE2Project/pcre2)
 * [freetype](https://github.com/freetype/freetype)
 * [libfacedetection](https://github.com/ShiqiYu/libfacedetection)

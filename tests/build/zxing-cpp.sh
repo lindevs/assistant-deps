@@ -10,7 +10,7 @@ if [[ ! -d $DIR ]]; then
   cd $DIR && git apply $WORKDIR/tests/patch/zxing-cpp/1_update_cmake_config.patch \
           && git apply $WORKDIR/tests/patch/zxing-cpp/2_no_file_macro.patch
   cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$DIR/install/ref \
-    -DBUILD_SHARED_LIBS=OFF -DZXING_EXAMPLES=OFF $ARCH_OPTS -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+    -DBUILD_SHARED_LIBS=OFF -DZXING_EXAMPLES=OFF $ARCH_OPTS
   cmake --build build -j$(nproc)
   cmake --install build
   rm -rf $DIR/install/ref/lib/pkgconfig

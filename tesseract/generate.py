@@ -49,7 +49,6 @@ for file in src_files:
 with open('CMakeLists.txt', 'r+') as file:
     src = ''.join(f'        src/{f}\n' for f in src_main_files)
     content = re.sub(r'(set\(PROJECT_SOURCES)[\S\s]*?\)', r'\g<1>\n' + src + ')', file.read())
-    content = re.sub(r'(project\(.+? VERSION )[\d.]+', r'\g<1>' + version, content)
     src = ''.join(f'        src/{f}\n' for f in src_avx_files)
     content = re.sub(r'(set\(PROJECT_AVX_SOURCES)[\S\s]*?\)', r'\g<1>\n' + src + ')', content)
     src = ''.join(f'        src/{f}\n' for f in src_avx2_files)
@@ -62,6 +61,7 @@ with open('CMakeLists.txt', 'r+') as file:
     content = re.sub(r'(set\(PROJECT_SSE_SOURCES)[\S\s]*?\)', r'\g<1>\n' + src + ')', content)
     src = ''.join(f'        src/{f}\n' for f in src_neon_files)
     content = re.sub(r'(set\(PROJECT_NEON_SOURCES)[\S\s]*?\)', r'\g<1>\n' + src + ')', content)
+    content = re.sub(r'(project\(.+? VERSION )[\d.]+', r'\g<1>' + version, content)
     file.seek(0)
     file.write(content)
     file.truncate()

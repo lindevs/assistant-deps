@@ -1,0 +1,2 @@
+dsp/lossless_avx2.c
+dsp/lossless_enc_avx2.c

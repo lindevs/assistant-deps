@@ -1,0 +1,7 @@
+dsp/alpha_processing_sse41.c
+dsp/dec_sse41.c
+dsp/enc_sse41.c
+dsp/lossless_enc_sse41.c
+dsp/lossless_sse41.c
+dsp/upsampling_sse41.c
+dsp/yuv_sse41.c
