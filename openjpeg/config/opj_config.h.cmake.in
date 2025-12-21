@@ -1,0 +1,14 @@
+#ifndef OPJ_CONFIG_H_INCLUDED
+#define OPJ_CONFIG_H_INCLUDED
+
+/* create opj_config.h for CMake */
+
+/*--------------------------------------------------------------------------*/
+/* OpenJPEG Versioning                                                      */
+
+/* Version number. */
+#define OPJ_VERSION_MAJOR @PROJECT_VERSION_MAJOR@
+#define OPJ_VERSION_MINOR @PROJECT_VERSION_MINOR@
+#define OPJ_VERSION_BUILD @PROJECT_VERSION_PATCH@
+
+#endif

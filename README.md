@@ -17,6 +17,7 @@
 * [zlib](https://github.com/madler/zlib)
 * [libpng](https://github.com/pnggroup/libpng)
 * [libwebp](https://github.com/webmproject/libwebp)
+* [openjpeg](https://github.com/uclouvain/openjpeg)
 * [pcre2](https://github.com/PCRE2Project/pcre2)
 * [freetype](https://github.com/freetype/freetype)
 * [libfacedetection](https://github.com/ShiqiYu/libfacedetection)
