@@ -9,7 +9,7 @@ if [[ ! -d $DIR ]]; then
   git clone https://github.com/uclouvain/openjpeg.git --depth=1 --branch=v2.5.4 $DIR
   cd $DIR && git apply $WORKDIR/tests/patch/openjpeg/1_update_cmake_config.patch
   cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$DIR/install/ref \
-    -DBUILD_SHARED_LIBS=OFF -DBUILD_CODEC=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON $ARCH_OPTS
+    -DBUILD_SHARED_LIBS=OFF -DBUILD_CODEC=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON $ARCH_OPTS
   cmake --build build -j$(nproc)
   cmake --install build
   rm -rf $DIR/install/ref/lib/pkgconfig

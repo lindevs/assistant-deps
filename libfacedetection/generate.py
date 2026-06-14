@@ -7,7 +7,8 @@ url = 'https://github.com/ShiqiYu/libfacedetection.git'
 include_files = [line.strip() for line in open('files/include.txt')]
 src_files = [line.strip() for line in open('files/src.txt')]
 
-subprocess.check_call(['git', 'clone', url, '--depth=1', 'tmp'], stderr=subprocess.DEVNULL)
+subprocess.check_call(['git', 'clone', url, 'tmp'], stderr=subprocess.DEVNULL)
+subprocess.check_call(['git', 'checkout', '82689db'], stderr=subprocess.DEVNULL, cwd='tmp')
 
 os.makedirs('license', exist_ok=True)
 shutil.copy2('tmp/LICENSE', 'license/LICENSE')
