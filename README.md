@@ -14,6 +14,7 @@
 * [libsm](https://gitlab.freedesktop.org/xorg/lib/libsm)
 * [libxdmcp](https://gitlab.freedesktop.org/xorg/lib/libxdmcp)
 * [libx11](https://gitlab.freedesktop.org/xorg/lib/libx11)
+* [libxkbcommon](https://github.com/xkbcommon/libxkbcommon)
 * [zlib](https://github.com/madler/zlib)
 * [libpng](https://github.com/pnggroup/libpng)
 * [libwebp](https://github.com/webmproject/libwebp)

@@ -8,8 +8,7 @@ WORKDIR=$PWD
 DIR=$PWD/build/lib/libfacedetection/$1
 if [[ ! -d $DIR ]]; then
   git clone https://github.com/ShiqiYu/libfacedetection.git $DIR
-  cd $DIR
-  git checkout 82689db
+  cd $DIR && git checkout 82689db
   cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$DIR/install/ref \
     -DBUILD_SHARED_LIBS=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON $ARCH_OPTS
   cmake --build build -j$(nproc)

@@ -1,0 +1,36 @@
+diff --git a/meson.build b/meson.build
+index c044c09..e468eba 100644
+--- a/meson.build
++++ b/meson.build
+@@ -928,18 +928,6 @@ if get_option('enable-x11')
+     if not has_xkbcomp.found()
+         warning('xkbcomp program not found, but is required to run X11 tests.')
+     endif
+-    test(
+-        'x11',
+-        executable('test-x11', 'test/x11.c', dependencies: x11_xvfb_test_dep),
+-        env: test_env,
+-        is_parallel : false,
+-    )
+-    test(
+-        'x11comp',
+-        executable('test-x11comp', 'test/x11comp.c', dependencies: x11_xvfb_test_dep),
+-        env: test_env,
+-        is_parallel : false,
+-    )
+ endif
+ if get_option('enable-xkbregistry')
+     test(
+@@ -1078,11 +1066,7 @@ benchmark(
+     env: bench_env,
+ )
+ if get_option('enable-x11')
+-  benchmark(
+-      'x11',
+-      executable('bench-x11', 'bench/x11.c', dependencies: x11_test_dep),
+-      env: bench_env,
+-  )
++
+ endif
+
+

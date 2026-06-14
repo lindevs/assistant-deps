@@ -1,0 +1,6 @@
+xkbcommon.h
+xkbcommon-compat.h
+xkbcommon-compose.h
+xkbcommon-keysyms.h
+xkbcommon-names.h
+xkbcommon-x11.h
