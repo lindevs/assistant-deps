@@ -2,7 +2,7 @@
 
 libs=(all xorgproto libxau libxcb libxcb-render-util libxcb-wm libxcb-keysyms libxcb-util libxcb-image libxcb-cursor \
       libxtrans libice libsm libxdmcp libx11 libxkbcommon zlib libpng libwebp openjpeg pcre2 freetype libfacedetection \
-      leptonica tesseract zxing-cpp)
+      leptonica tesseract zxing-cpp libffi)
 
 archs=(all native aarch64 riscv64)
 

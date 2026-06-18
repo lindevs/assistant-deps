@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y curl ca-certifi
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
         git gcc g++ make ninja-build cmake python3-pip \
-        autoconf automake pkg-config xutils-dev xtrans-dev libtool gperf bison \
+        autoconf automake pkg-config xutils-dev xtrans-dev libltdl-dev libtool gperf bison \
         gcc-aarch64-linux-gnu g++-aarch64-linux-gnu libc6-dev-arm64-cross \
         gcc-riscv64-linux-gnu g++-riscv64-linux-gnu libc6-dev-riscv64-cross \
     && pip3 install meson \

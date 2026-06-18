@@ -1,0 +1,46 @@
+/* Define this if you want statically defined trampolines */
+#cmakedefine FFI_EXEC_STATIC_TRAMP 1
+
+/* Define to 1 if you have the <alloca.h> header file. */
+#cmakedefine HAVE_ALLOCA_H 1
+
+/* Define if your assembler supports .cfi_* directives. */
+#cmakedefine HAVE_AS_CFI_PSEUDO_OP 1
+
+/* Define if your assembler supports unwind section type. */
+#cmakedefine HAVE_AS_X86_64_UNWIND_SECTION_TYPE 1
+
+/* Define if your assembler supports PC relative relocs. */
+#cmakedefine HAVE_AS_X86_PCREL 1
+
+/* Define if __attribute__((visibility("hidden"))) is supported. */
+#cmakedefine HAVE_HIDDEN_VISIBILITY_ATTRIBUTE 1
+
+/* Define to 1 if you have the `memfd_create' function. */
+#cmakedefine HAVE_MEMFD_CREATE 1
+
+/* Define to 1 if you have the <sys/memfd.h> header file. */
+#cmakedefine HAVE_SYS_MEMFD_H 1
+
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#define STDC_HEADERS 1
+
+#ifdef HAVE_HIDDEN_VISIBILITY_ATTRIBUTE
+#ifdef LIBFFI_ASM
+#ifdef __APPLE__
+#define FFI_HIDDEN(name) .private_extern name
+#else
+#define FFI_HIDDEN(name) .hidden name
+#endif
+#else
+#define FFI_HIDDEN __attribute__ ((visibility ("hidden")))
+#endif
+#else
+#ifdef LIBFFI_ASM
+#define FFI_HIDDEN(name)
+#else
+#define FFI_HIDDEN
+#endif
+#endif

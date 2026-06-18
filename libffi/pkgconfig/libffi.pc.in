@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}@FFI_EXEC_LIB_DIR@
+includedir=${prefix}/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: @PROJECT_VERSION@
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

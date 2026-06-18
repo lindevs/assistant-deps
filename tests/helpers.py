@@ -45,7 +45,8 @@ def get_object_files(lib):
                 else:
                     org_name = raw_name.rstrip('/')
 
-                name = re.sub(r'.*?_la-', '', org_name).removesuffix('.cpp.o').removesuffix('.c.o').removesuffix('.o')
+                name = re.sub(r'.*?_la-', '', org_name).removesuffix('.cpp.o').removesuffix('.c.o')
+                name = name.removesuffix('.S.o').removesuffix('.o')
                 name = name.removeprefix('meson-generated_').removeprefix('src_xkbcomp_').removeprefix('src_compose_')
                 name = name.removeprefix('src_x11_').removeprefix('src_')
 
