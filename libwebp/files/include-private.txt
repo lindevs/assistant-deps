@@ -28,7 +28,6 @@ utils/endian_inl_utils.h
 utils/filters_utils.h
 utils/huffman_encode_utils.h
 utils/huffman_utils.h
-utils/Makefile.am
 utils/palette.h
 utils/quant_levels_dec_utils.h
 utils/quant_levels_utils.h
